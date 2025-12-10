@@ -33,6 +33,9 @@ cybersecurity-home-lab/
 │ ├── kali_ifconfig.png
 │ ├── metasploitable_ifconfig.png
 │ └── nmap_scan_results.png
+│ └── pfsense_dhcp_leases.png
+│ └── pfsense_traffic_graph.png
+│ └── pfsense_firewall_logs.png
 ├── 🔍 scans/ # Security scan results
 │ └── (Nmap output files)
 ├── 📄 documents/ # Network diagrams & notes
@@ -136,9 +139,9 @@ This project is for **educational purposes only**. All tools and software used a
 
 ---
 
-**👨‍💻 Author:** [Your Name]  
-**📧 Contact:** [Your Email or LinkedIn]  
+**👨‍💻 Author:** Aibol  
+**📧 Contact:** sambetaibol@gmail.com  
 **🔗 Repository:** [https://github.com/AIbolS/cybersecurity-home-lab](https://github.com/AIbolS/cybersecurity-home-lab)  
 
-*Last updated: DATE*  
+*Last updated: 10.12.2025*  
 *Project created as part of cybersecurity skills development*
