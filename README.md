@@ -44,23 +44,29 @@ cybersecurity-home-lab/
 
 text
 
-## 📸 Key Configuration Screenshots
+## 📸 Lab Screenshots Gallery
 
-### 1. pfSense Dashboard
-![pfSense Dashboard](./screenshots/pfsense_dashboard.png)
-*Main control panel showing all network interfaces (WAN/LAN/DMZ) active and operational*
+### 🔧 **pfSense Configuration**
+| Screenshot | Description | Key Takeaway |
+|------------|-------------|--------------|
+| ![Dashboard](./screenshots/pfsense_dashboard.png) | **Main Dashboard** - Overview of all interfaces, system status, and traffic graphs | Shows WAN, LAN, and DMZ interfaces all operational with real-time monitoring |
+| ![Interfaces](./screenshots/pfsense_interfaces.png) | **Interface Assignments** - Network port configuration for WAN, LAN, and DMZ | Demonstrates proper network segmentation with separate interfaces for each security zone |
+| ![Firewall Rules](./screenshots/pfsense_firewall_rules.png) | **DMZ Firewall Rules** - Security policies controlling traffic between network segments | Implements principle of least privilege: LAN→DMZ allowed, DMZ→LAN restricted |
+| ![DHCP Leases](./screenshots/pfsense_dhcp_leases.png) | **DHCP Server Leases** - Automatic IP address assignment in LAN segment | Shows Kali Linux (192.168.10.100) successfully obtaining IP from pfSense DHCP server |
+| ![Traffic Graph](./screenshots/pfsense_traffic_graph.png) | **Network Traffic Analysis** - Real-time bandwidth monitoring per interface | Provides visibility into network activity between segments for security monitoring |
+| ![Firewall Logs](./screenshots/pfsense_firewall_logs.png) | **Firewall Log Viewer** - Security event logging and analysis | Essential for incident response - shows allowed/blocked connection attempts |
 
-### 2. Firewall Rules Configuration
-![Firewall Rules](./screenshots/pfsense_firewall_rules.png)
-*Security policies controlling traffic between LAN and DMZ network segments*
+### 🎯 **Security Testing Environment**
+| Screenshot | Description | Security Relevance |
+|------------|-------------|-------------------|
+| ![Kali Linux](./screenshots/kali_ifconfig.png) | **Kali Linux Network Config** - Penetration testing workstation in LAN segment | Attack platform (192.168.10.100) positioned inside protected network for authorized testing |
+| ![Metasploitable](./screenshots/metasploitable_ifconfig.png) | **Metasploitable Target Server** - Vulnerable system in isolated DMZ | Deliberately vulnerable target (192.168.20.10) in isolated zone for safe security training |
+| ![Nmap Scan](./screenshots/nmap_scan_results.png) | **Vulnerability Assessment** - Nmap port scan results from Kali to Metasploitable | Identifies open ports (21/FTP, 22/SSH, 80/HTTP) and vulnerable services for remediation |
 
-### 3. Kali Linux Setup
-![Kali Linux](./screenshots/kali_ifconfig.png)
-*Penetration testing workstation in LAN segment (192.168.10.100)*
-
-### 4. Target Server
-![Metasploitable](./screenshots/metasploitable_ifconfig.png)
-*Vulnerable target server in isolated DMZ segment (192.168.20.10)*
+## 🔗 Quick Navigation to Key Files
+- **[View all screenshots](./screenshots/)** - Complete visual documentation
+- **[Network architecture diagram](./documents/network_architecture.txt)** - Logical network design
+- **[Raw scan results](./scans/)** - Technical security assessment data
 
 ## 🎯 Skills Demonstrated
 
